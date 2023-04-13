@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="aosp" fetch="https://android.googlesource.com/" review="https://android-review.googlesource.com/" />
+  <remote  name="grapheneos"
+    fetch="https://github.com/GrapheneOS/"
+    revision="refs/heads/13" />
   <default revision="master-kernel-build-2022" remote="aosp" sync-j="4" />
 
   <superproject name="kernel/superproject" remote="aosp" revision="common-android13-5.15-lts" />
